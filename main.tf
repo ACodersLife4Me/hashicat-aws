@@ -1,6 +1,8 @@
 provider "aws" {
   version = "~> 2.0"
   region  = var.region
+  access_key = "AWS_ACCESS_KEY_ID"
+  secret_key = "AWS_SECRET_ACCESS_KEY"
 }
 
 resource aws_vpc "hashicat" {
